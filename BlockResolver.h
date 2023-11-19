@@ -29,7 +29,7 @@ typedef std::pair<std::shared_ptr<Connection>, std::string> conn_hash;
 typedef std::map<uint, ActiveUsersOfBuffer> BlocksInUSE;
 
 class SendingData
-{
+{ 
 public:
     bool GetBlockById        (const uint id, char * retBuf);
     void AddConnectionToBlock(const uint id, char * readyBuf, size_t size);
