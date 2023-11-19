@@ -5,8 +5,6 @@
 #include <cstdio>
 #include <queue>
 #include <deque>
-#include <memory>
-#include <utility>
 #include <thread>
 #include <functional>
 #include <boost/bind/bind.hpp>
