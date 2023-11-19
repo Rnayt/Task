@@ -132,6 +132,16 @@ private:
             {
                 _hashesForResponse = readMsg.decodeHeader();
                 ReadBody(_hashesForResponse);
+                if (readMsg.isHeader())
+                {
+                    _hashesForResponse = readMsg.decodeHeader();
+                    ReadBody(_hashesForResponse);
+                }
+                else
+                {
+                    _socket.close();
+                    std::cerr << "Error: Non-header message received" << std::endl;
+                }
             }
             else
             {
