@@ -131,14 +131,14 @@ private:
             if(!ec)
             {
                 _hashesForResponse = readMsg.decodeHeader();
-                    ReadBody(_hashesForResponse);
-                }
-                else
-                {
-                    //
-                    _socket.close();
-                    std::cerr << " Error while reading data " << std::endl;
-                }
+                ReadBody(_hashesForResponse);
+            }
+            else
+            {
+                //
+                _socket.close();
+                std::cerr << " Error while reading data " << std::endl;
+            }
         });
     }
 
