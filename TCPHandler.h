@@ -8,7 +8,6 @@
 #include <memory>
 #include <set>
 #include <utility>
-#include <list>
 #include <thread>
 #include <functional>
 #include <boost/bind/bind.hpp>
