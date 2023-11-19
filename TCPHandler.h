@@ -3,8 +3,6 @@
 #include <iostream>
 #include <string>
 #include <cstdio>
-#include <cstdlib>
-#include <cstring>
 #include <queue>
 #include <deque>
 #include <memory>
