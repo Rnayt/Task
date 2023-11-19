@@ -1,5 +1,5 @@
 
-HTTP handler (ClientReader)
+TCP handler (ClientReader)
 1) Принимает хэши от клиентов и добавляет их в очередь hashClientQueue вместе с указателем на соединение
 2) Когда получает соответствующий запрос от BlockResolver ('Reader from disk with cache')
   a) Отправляет результат
