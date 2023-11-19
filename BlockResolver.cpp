@@ -40,8 +40,7 @@ void SendingData::DeleteConnection(const uint id)
     if (it != _blocksInUse.end()) 
     {
         ActiveUsersOfBuffer & activeBuffer = it -> second;
-        auto & counter = activeBuffer.counter;
-        counter--;
+        activeBuffer.counter--;
 
         if (counter == 0) 
         {
