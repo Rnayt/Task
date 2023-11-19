@@ -7,7 +7,7 @@ int main(int argc, char * argv[])
     {
         if (argc < 2)
         {
-            std::cout << "Usage: chat_server <port> [<port> ...]\n";
+            std::cout << "Usage: port\n";
             return 1;
         }
 
